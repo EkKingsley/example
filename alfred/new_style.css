@@ -1,0 +1,223 @@
+.col {position:relative;width:auto;min-height:1px;padding-right:15px;padding-left:15px; height: auto;}
+
+.col-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%; height: auto;}
+
+.col-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%; height: auto;}
+
+.col-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%; height: auto;}
+
+.col-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%; height: auto;}
+
+.col-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+
+.col-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+
+.col-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%; height: auto;}
+
+.col-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+
+.col-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+
+.col-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+
+.col-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+
+.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+
+.col-md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+
+.col-md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+
+.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+
+.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+
+.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+
+.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+
+.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+
+.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+
+.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+
+.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+
+.col-md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+
+.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:10px;margin-left:10px; height: auto;}
+
+
+.row:before,
+.row:after
+ {
+  display: table;
+  content: " ";
+}
+
+
+.row:after  
+ {
+  clear: both;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:500;line-height:1.2}
+.h1,h1{font-size:2.5rem}
+.h2,h2{font-size:2rem}
+.h3,h3{font-size:1.75rem}
+.h4,h4{font-size:1.5rem}
+.h5,h5{font-size:1.25rem}
+.h6,h6{font-size:1rem}
+.lead{font-size:1.25rem;font-weight:300}
+
+/* <!-- Personal Styles */
+
+a {
+    background-color: red;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px;
+    background-color: #dddddd;
+    
+  }
+
+  a:hover {
+    background-color: white;
+  }
+
+.links {
+    height:inherit;
+    align-content: center;
+    text-align: center;
+}
+
+.link {
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    text-align: center;
+    width: auto;
+}
+
+.logo {
+    text-align: center;
+    align-items: center;
+    padding-top: 18px;
+}
+
+h2{
+    padding-top: 50px;
+    margin-top: -19px;
+}
+
+#midsection{
+    border: 1px solid black;
+    width: 644px;
+    margin-right: 65px;
+}
+
+.side {
+    float: right;
+    border-left: 1px solid black;
+    width: 50px;
+    margin-left: 50px;
+}
+
+.col-8{width:550px}
+
+.footer {
+    width: 644px;
+    margin-right: 65px;
+}
+
+.mid-left{
+    border-right: 1px solid black;
+}
+
+p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* drop down */
+.droplink {    
+    color: white;  
+    padding: 5px;  
+    font-size: 16px;  
+    cursor: pointer;  
+  }  
+    
+  .droplink:hover {  
+    background-color: brown;  
+  }  
+    
+  .dropdown {  
+    position: relative;  
+    display: inline-block;  
+  }  
+    
+  .dropdown-content {  
+    display: none;  
+    position: absolute;  
+    background-color:white;  
+    min-width: 140px;  
+    overflow: auto; 
+    color: white;
+  }  
+    
+  .dropdown-content a {  
+    color: black;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+  }  
+    
+  .dropdown a:hover {  
+    background-color: #ddd;  
+   }  
+    
+  .show {  
+    display: block;  
+  }  
+
+  /* contact page styling */
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=tel], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 7px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

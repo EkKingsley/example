@@ -1,0 +1,151 @@
+<html>  
+<head>  
+<style>  
+.droplink {     
+  cursor: pointer;  
+}  
+  
+.dropbtn:hover {  
+  background-color: brown;  
+}  
+  
+.dropdown {  
+  position: relative;  
+  display: inline-block;  
+}  
+  
+.dropdown-content {  
+  display: none;  
+  position: absolute;  
+  background-color: white;  
+  min-width: 140px;  
+  overflow: auto;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}  
+  
+.dropdown-content a {  
+  color: black;  
+  padding: 12px 16px;  
+  text-decoration: none;  
+  display: block;  
+}  
+  
+.dropdown a:hover {  
+   background-color: #ddd;  
+ }  
+  
+.show {  
+  display: block;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<h2>List of tutorials using Dropdown menu</h2>  
+<p>Click on the button to open the tutorial dropdown menu.</p>  
+  
+<div class="dropdown">  
+  <button onclick="home()" class="dropbtn">HOME</button>   
+</div>  
+  
+<div class="dropdown">  
+  <button onclick="servicesList()" class="dropbtn">SERVICES</button>  
+  <div id="myDropdown2" class="dropdown-content">  
+    <a href="#mysql" onclick="mysql()">Application Development</a>  
+    <a href="#mdb" onclick="mDB()">Installation of CCTV</a>  
+    <a href="#cass" onclick="cassandra()">Hardware and Networking</a>
+    <a href="#cass" onclick="cassandra()">IT Consultancy</a>
+  </div>  
+</div>  
+  
+<div class="dropdown">  
+  <button onclick="productList()" class="dropbtn">PRODUCT</button>  
+  <div id="myDropdown3" class="dropdown-content">  
+	<ul>
+		<lh><b>Desktop Application</b></lh>
+		<li><a href="#php" onclick="php()">School Management System</a></li>
+		<li><a href="#php" onclick="php()">Sales Management System</a></li>
+	</ul>    
+	<ul><lh><b>Web Application</b></lh>
+		<li><a href="#php" onclick="php()">School Management System</a></li>
+		<li><a href="#php" onclick="php()">Sales Management System</a></li>
+		<li><a href="#php" onclick="php()">School Management System</a></li>
+	</ul>
+	<ul><lh><b>Mobile Application</b></lh>
+		<li><a href="#php" onclick="php()">GC-Chat</a></li>
+		<li><a href="#php" onclick="php()">Grademate</a></li>
+	</ul>  
+  </div>  
+</div>  
+<div class="dropdown">  
+  <button onclick="productList()" class="dropbtn">CONTACT</button>  
+  <div id="myDropdown4" class="dropdown-content">  
+    <a href="#php" onclick="php()">PHP</a>  
+    <a href="#css" onclick="css()">CSS</a>  
+    <a href="#js" onclick="js()">JavaScript</a>  
+  </div>  
+</div>  
+<script>  
+/* methods to hide and show the dropdown content */  
+function programmingList() {  
+  document.getElementById("myDropdown1").classList.toggle("show");  
+}  
+  
+function servicesList() {  
+  document.getElementById("myDropdown2").classList.toggle("show");  
+}  
+  
+  
+function productList() {  
+  document.getElementById("myDropdown3").classList.toggle("show");  
+}  
+  
+/* methods to redirect to tutorial page that user will select from dropdown list */  
+function java() {  
+   window.location.replace("https://www.javatpoint.com/java-tutorial");  
+}  
+function python() {  
+   window.location.replace("https://www.javatpoint.com/python-tutorial");  
+}  
+function cpp() {  
+   window.location.replace("https://www.javatpoint.com/cpp-tutorial");  
+}  
+function c() {  
+   window.location.replace("https://www.javatpoint.com/c-programming-language-tutorial");  
+}  
+function mysql() {  
+   window.location.replace("https://www.javatpoint.com/mysql-tutorial");  
+}  
+function mDB() {  
+   window.location.replace("https://www.javatpoint.com/mongodb-tutorial");  
+}  
+function cassandra() {  
+   window.location.replace("https://www.javatpoint.com/cassandra-tutorial");  
+}  
+function php() {  
+   window.location.replace("dropdown.html");  
+}  
+function css() {  
+   window.location.replace("https://www.javatpoint.com/css-tutorial");  
+}  
+function js() {  
+   window.location.replace("https://www.javatpoint.com/javascript-tutorial");  
+}  
+  
+// Close the dropdown menu if the user clicks outside of it  
+window.onclick = function(event) {  
+  if (!event.target.matches('.dropbtn')) {  
+    var dropdowns = document.getElementsByClassName("dropdown-content");  
+    var i;  
+    for (i = 0; i < dropdowns.length; i++) {  
+      var openDropdown = dropdowns[i];  
+      if (openDropdown.classList.contains('show')) {  
+        openDropdown.classList.remove('show');  
+      }  
+    }  
+  }  
+}  
+</script>  
+  
+</body>  
+</html>

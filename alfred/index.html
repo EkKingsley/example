@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="new_style.css">
+<link rel='stylesheet' href="css.txt">
+<title>Home Page</title>
+
+</head>
+<body>
+<div class="row" style="height: 100vh;">
+<div class="row" id="header" style="height: 150px; width: 700px;">
+    <div class="col-3 logo" style="border: 1px solid black;"><h3 class="logo">LOGO</h3></div>
+    <div class="col-8" style="border: 1px solid black; width:550px;">
+        <div class="col" style="height: 104px; border-bottom: 1px solid black; text-align: center;"><b><h2>NUKSOFT LIMITED</h2></b></div>
+        <div class="col" style="height: 63px;">
+            <div class="row links">
+                <div class="col link">
+                    <a href="dropdown.html" class="droplink">HOME</a>
+                    <a onclick="servicesList()" class="droplink">SERVICES</a>
+                    <!-- drop down for services-->
+                    <div id="services" class="dropdown-content">  
+                        <a href="appdev.html" onclick="mysql()">Application Development</a>  
+                        <a href="cctv.html" onclick="mDB()">Installation of CCTV</a>  
+                        <a href="hn.html" onclick="cassandra()">Hardware and Networking</a>
+                        <a href="it.html" onclick="cassandra()">IT Consultancy</a>
+                      </div> 
+                    <!-- drop down for services ends here-->
+                    <a class="droplink" onclick="productList()">PRODCUTS</a>
+                    <!-- drop down for products-->
+                    <div id="products" class="dropdown-content">  
+                        <ul>
+                            <lh><b><a>Desktop Application</a></b></lh>
+                            <li><a href="#php" onclick="php()">School Management System</a></li>
+                            <li><a href="#php" onclick="php()">Sales Management System</a></li>
+                        </ul>    
+                        <ul><lh><b><a>Web Application</a></b></lh>
+                            <li><a href="#php" onclick="php()">Hospital Management System</a></li>
+                            <li><a href="#php" onclick="php()">Pharmacy Management System</a></li>
+                            <li><a href="#php" onclick="php()">Asset Management System</a></li>
+                        </ul>
+                        <ul><lh><b><a>Mobile Application</a></b></lh>
+                            <li><a href="#php" onclick="php()">GC-Chat</a></li>
+                            <li><a href="#php" onclick="php()">Grademate</a></li>
+                        </ul>  
+                      </div> 
+                      <!-- drop down for products ends here--> 
+                    <a href="contact.html" class="droplink">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" id="midsection" style="height: 430px;">
+    <div class="col-8 mid-left"></div>
+    <div class="col-3">
+        <div class="col" style="border-bottom: 1px solid black; height: 215px; width: 185px;"></div>
+        <div class="col"></div>
+    </div>
+</div>
+<div class="row footer" style="border: 1px solid black; height: 40px; text-align: center;">
+    <p><b>Helping Business Grow</b></hp>
+</div>
+</div>
+
+
+<!-- Javascript-->
+<script>
+function servicesList() {  
+    document.getElementById("services").classList.toggle("show");  
+  }
+
+  function productList() {  
+  document.getElementById("products").classList.toggle("show");  
+}  
+
+function php() {  
+   window.location.replace("product-page.html");  
+} 
+
+</script>
+
+</body>
+</html>
